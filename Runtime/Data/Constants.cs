@@ -1,6 +1,6 @@
 using System;
 
-namespace jp.co.gatari.GlobalCoordinate.Runtime.Data
+namespace GlobalCoordinate.Runtime.Data
 {
     public class Constants
     {

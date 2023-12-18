@@ -1,6 +1,6 @@
 {
     "name": "GlobalCoordinate.Runtime",
-    "rootNamespace": "jp.co.gatari.GlobalCoordinate.Runtime",
+    "rootNamespace": "GlobalCoordinate.Runtime",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

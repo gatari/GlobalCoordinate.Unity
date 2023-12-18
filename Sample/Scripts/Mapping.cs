@@ -1,4 +1,4 @@
-using jp.co.gatari.GlobalCoordinate.Runtime.Data;
+using GlobalCoordinate.Runtime.Data;
 using UnityEngine;
 
 namespace jp.co.gatari.GlobalCoordinate.Sample

@@ -3,7 +3,7 @@ using MathNet.Numerics.LinearAlgebra;
 using MathNet.Numerics.LinearAlgebra.Double;
 using MathNet.Spatial.Euclidean;
 
-namespace jp.co.gatari.GlobalCoordinate.Runtime.Data
+namespace GlobalCoordinate.Runtime.Data
 {
     // 二次元のヘルマート変換
     public class HelmertTransform2D
