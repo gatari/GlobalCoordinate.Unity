@@ -88,7 +88,7 @@ namespace GlobalCoordinate.Runtime.Data
             return position.ToVector3D();
         }
 
-        public static GeodeticCoordinate ConvertEnuToGeodetic(
+        public static GeodeticCoordinate ConvertEnuPositionToGeodetic(
             GeodeticCoordinate sourceGeodeticPose,
             Vector3D enuPosition)
         {
@@ -156,6 +156,18 @@ namespace GlobalCoordinate.Runtime.Data
                 },
                 { 0, Math.Cos(latitude), Math.Sin(latitude) },
             });
+        }
+
+        public static GeodeticCoordinate ConvertEnuPoseToGeodetic(GeodeticCoordinate originGeodeticCoordinate,
+            Vector3D enuPosition, Quaternion enuRotation)
+        {
+            return new GeodeticCoordinate()
+            {
+                Altitude = originGeodeticCoordinate.Altitude + enuPosition.Z,
+                Latitude = originGeodeticCoordinate.Latitude,
+                Longitude = originGeodeticCoordinate.Longitude,
+                Rotation = enuRotation
+            };
         }
     }
 }

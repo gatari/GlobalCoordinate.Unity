@@ -23,7 +23,7 @@ namespace jp.co.gatari.GlobalCoordinate.Tests
             // 東に100m、北に100m移動した座標
             var secondaryGeodeticCoordinate = new GeodeticCoordinate()
             {
-                Altitude = 0,
+                Altitude = 30,
                 Latitude = 35.0009,
                 Longitude = 135.0011,
                 Rotation = MathNet.Spatial.Euclidean.Quaternion.One

@@ -59,7 +59,7 @@ namespace jp.co.gatari.GlobalCoordinate.Tests
             };
 
             // Act
-            var result = CoordinateConverter.ConvertEnuToGeodetic(sourceLlaPose, pose.position.ToEcrVector());
+            var result = CoordinateConverter.ConvertEnuPositionToGeodetic(sourceLlaPose, pose.position.ToEcrVector());
 
             Assert.AreEqual(35.0009, result.Latitude, 0.0001);
             Assert.AreEqual(135.0011, result.Longitude, 0.0001);
